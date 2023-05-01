@@ -1,0 +1,159 @@
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #f5f4f7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #d5d1d156;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #34333356;
+}
+
+.card-login>label{
+    color:  #02020258;
+    font-weight: 800;
+    margin: 0;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form-group > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #dddee2ae;
+    color: #47494994;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #e7e3ed;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group > input ::placeholder{
+    color: #e7e3ed;
+    }
+
+.btn{
+    width: 90%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:3px ;
+    color: #02020285;
+    background: #dddee2ae;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #ecefed52;
+}
+
+
+
+.image{
+width: 50%;
+}
+
+.right-login{
+    width: 100vw;
+    height: 100vh;
+    background: #f5f4f7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.left-login-image{
+    width: 35vw;
+
+}
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+   .main-login{
+    flex-direction: column;
+   }
+
+   .left-login{
+    width: 100%;
+    
+   }
+   .left-right{
+    width: 100%;
+    height: auto;
+   }
+
+   .left-login-image{
+    width: 40vh;
+   }
+
+   .card-login{
+    width: 90%;
+   }
+}
+@media only screen and (max-width:412px){
+    .card-login{
+        width: 85%;
+    }
+  
+    .card-login{
+        margin-top: 1%;
+       
+        width: 80%;
+        justify-content: space-around;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+    .left-login-image{
+        margin-top: 45%;
+        width: 40vh;
+        justify-content: space-around;
+         justify-content: center;
+         flex-shrink: 1;
+       }
+}
